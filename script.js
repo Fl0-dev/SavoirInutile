@@ -24,7 +24,7 @@ function ajouter() {
     //déclaration d'un élément de la liste
     var item = document.createElement('div');
     //ajout si champs remplis
-    if (savoir !=='' && auteur !==''&& date !=='') {
+    if (savoir.trim().length !==0 && auteur.trim().length !==0 && date !== null) {
         //création de l'item
         item.innerHTML = "<h5><q>" + savoir + "</q></h5><p>Par " + auteur + " le " + dateAaffiche + "</p>";
         //affichage
